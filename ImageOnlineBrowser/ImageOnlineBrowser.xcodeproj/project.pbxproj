@@ -18,6 +18,18 @@
 		C67000642A44E0F100530355 /* ImageOnlineBrowserUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67000632A44E0F100530355 /* ImageOnlineBrowserUITestsLaunchTests.swift */; };
 		C670012E2A44FDAE00530355 /* Coordinator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C670012D2A44FDAE00530355 /* Coordinator.framework */; };
 		C670012F2A44FDAE00530355 /* Coordinator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C670012D2A44FDAE00530355 /* Coordinator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C67001E62A45052800530355 /* Commons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C67001E52A45052800530355 /* Commons.framework */; };
+		C67001E72A45052800530355 /* Commons.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C67001E52A45052800530355 /* Commons.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C67001E92A45052D00530355 /* Main.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C67001E82A45052D00530355 /* Main.framework */; };
+		C67001EA2A45052D00530355 /* Main.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C67001E82A45052D00530355 /* Main.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C67001EC2A45053600530355 /* NetworkAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C67001EB2A45053600530355 /* NetworkAPI.framework */; };
+		C67001ED2A45053600530355 /* NetworkAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C67001EB2A45053600530355 /* NetworkAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C67001EF2A45053C00530355 /* NetworkAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C67001EE2A45053C00530355 /* NetworkAPI.framework */; };
+		C67001F02A45053C00530355 /* NetworkAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C67001EE2A45053C00530355 /* NetworkAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C67001F22A45054800530355 /* SharedUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C67001F12A45054800530355 /* SharedUI.framework */; };
+		C67001F32A45054800530355 /* SharedUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C67001F12A45054800530355 /* SharedUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C67001F52A45055000530355 /* Splash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C67001F42A45055000530355 /* Splash.framework */; };
+		C67001F62A45055100530355 /* Splash.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C67001F42A45055000530355 /* Splash.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +56,13 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				C67001F02A45053C00530355 /* NetworkAPI.framework in Embed Frameworks */,
+				C67001ED2A45053600530355 /* NetworkAPI.framework in Embed Frameworks */,
+				C67001F62A45055100530355 /* Splash.framework in Embed Frameworks */,
 				C670012F2A44FDAE00530355 /* Coordinator.framework in Embed Frameworks */,
+				C67001F32A45054800530355 /* SharedUI.framework in Embed Frameworks */,
+				C67001EA2A45052D00530355 /* Main.framework in Embed Frameworks */,
+				C67001E72A45052800530355 /* Commons.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,6 +84,12 @@
 		C67000612A44E0F100530355 /* ImageOnlineBrowserUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageOnlineBrowserUITests.swift; sourceTree = "<group>"; };
 		C67000632A44E0F100530355 /* ImageOnlineBrowserUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageOnlineBrowserUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C670012D2A44FDAE00530355 /* Coordinator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Coordinator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C67001E52A45052800530355 /* Commons.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Commons.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C67001E82A45052D00530355 /* Main.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Main.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C67001EB2A45053600530355 /* NetworkAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C67001EE2A45053C00530355 /* NetworkAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C67001F12A45054800530355 /* SharedUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SharedUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C67001F42A45055000530355 /* Splash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Splash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +97,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C67001EF2A45053C00530355 /* NetworkAPI.framework in Frameworks */,
+				C67001EC2A45053600530355 /* NetworkAPI.framework in Frameworks */,
+				C67001F52A45055000530355 /* Splash.framework in Frameworks */,
 				C670012E2A44FDAE00530355 /* Coordinator.framework in Frameworks */,
+				C67001F22A45054800530355 /* SharedUI.framework in Frameworks */,
+				C67001E92A45052D00530355 /* Main.framework in Frameworks */,
+				C67001E62A45052800530355 /* Commons.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -149,6 +179,12 @@
 		C67000B82A44F05E00530355 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C67001F42A45055000530355 /* Splash.framework */,
+				C67001F12A45054800530355 /* SharedUI.framework */,
+				C67001EE2A45053C00530355 /* NetworkAPI.framework */,
+				C67001EB2A45053600530355 /* NetworkAPI.framework */,
+				C67001E82A45052D00530355 /* Main.framework */,
+				C67001E52A45052800530355 /* Commons.framework */,
 				C670012D2A44FDAE00530355 /* Coordinator.framework */,
 			);
 			name = Frameworks;
