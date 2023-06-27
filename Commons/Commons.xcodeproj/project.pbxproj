@@ -11,6 +11,8 @@
 		C67001462A44FE0700530355 /* Commons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C670013B2A44FE0700530355 /* Commons.framework */; };
 		C670014B2A44FE0700530355 /* CommonsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C670014A2A44FE0700530355 /* CommonsTests.swift */; };
 		C670014C2A44FE0700530355 /* Commons.h in Headers */ = {isa = PBXBuildFile; fileRef = C670013E2A44FE0700530355 /* Commons.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C67002002A45076E00530355 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67001FF2A45076E00530355 /* Coordinator.swift */; };
+		C67002022A4507A300530355 /* Configs.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67002012A4507A300530355 /* Configs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		C670013F2A44FE0700530355 /* Commons.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Commons.docc; sourceTree = "<group>"; };
 		C67001452A44FE0700530355 /* CommonsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommonsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C670014A2A44FE0700530355 /* CommonsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonsTests.swift; sourceTree = "<group>"; };
+		C67001FF2A45076E00530355 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		C67002012A4507A300530355 /* Configs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Configs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,8 @@
 			children = (
 				C670013E2A44FE0700530355 /* Commons.h */,
 				C670013F2A44FE0700530355 /* Commons.docc */,
+				C67001FF2A45076E00530355 /* Coordinator.swift */,
+				C67002012A4507A300530355 /* Configs.swift */,
 			);
 			path = Commons;
 			sourceTree = "<group>";
@@ -194,7 +200,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C67002002A45076E00530355 /* Coordinator.swift in Sources */,
 				C67001402A44FE0700530355 /* Commons.docc in Sources */,
+				C67002022A4507A300530355 /* Configs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +404,7 @@
 		C67001532A44FE0700530355 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JXQ54B2CD8;
@@ -412,6 +421,7 @@
 		C67001542A44FE0700530355 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JXQ54B2CD8;

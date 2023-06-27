@@ -15,6 +15,12 @@
 		C67001FA2A4505A500530355 /* Commons.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C67001F82A4505A400530355 /* Commons.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C67001FD2A4505B000530355 /* SharedUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C67001FC2A4505B000530355 /* SharedUI.framework */; };
 		C67001FE2A4505B000530355 /* SharedUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C67001FC2A4505B000530355 /* SharedUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C67002072A450A8700530355 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67002062A450A8700530355 /* SplashViewController.swift */; };
+		C67002092A450AA000530355 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67002082A450AA000530355 /* SplashViewModel.swift */; };
+		C670020B2A450C2F00530355 /* SplashCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C670020A2A450C2F00530355 /* SplashCoordinator.swift */; };
+		C67002192A45170C00530355 /* SplashModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67002182A45170C00530355 /* SplashModule.swift */; };
+		C670021B2A45178300530355 /* SplashViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C670021A2A45178300530355 /* SplashViewModelProtocol.swift */; };
+		C69DCFFB2A49C80D00E91835 /* SplashAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C69DCFFA2A49C80D00E91835 /* SplashAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +56,12 @@
 		C670016E2A44FE5B00530355 /* SplashTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashTests.swift; sourceTree = "<group>"; };
 		C67001F82A4505A400530355 /* Commons.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Commons.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C67001FC2A4505B000530355 /* SharedUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SharedUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C67002062A450A8700530355 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		C67002082A450AA000530355 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		C670020A2A450C2F00530355 /* SplashCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashCoordinator.swift; sourceTree = "<group>"; };
+		C67002182A45170C00530355 /* SplashModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashModule.swift; sourceTree = "<group>"; };
+		C670021A2A45178300530355 /* SplashViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModelProtocol.swift; sourceTree = "<group>"; };
+		C69DCFFA2A49C80D00E91835 /* SplashAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +107,10 @@
 		C67001612A44FE5B00530355 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
+				C69DCFF92A49C7FC00E91835 /* Data */,
+				C67002052A45091200530355 /* Router */,
+				C67002042A4508DA00530355 /* ViewModel */,
+				C67002032A4508D300530355 /* View */,
 				C67001622A44FE5B00530355 /* Splash.h */,
 				C67001632A44FE5B00530355 /* Splash.docc */,
 			);
@@ -116,6 +132,40 @@
 				C67001F82A4505A400530355 /* Commons.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C67002032A4508D300530355 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C67002062A450A8700530355 /* SplashViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C67002042A4508DA00530355 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C67002082A450AA000530355 /* SplashViewModel.swift */,
+				C670021A2A45178300530355 /* SplashViewModelProtocol.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C67002052A45091200530355 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				C67002182A45170C00530355 /* SplashModule.swift */,
+				C670020A2A450C2F00530355 /* SplashCoordinator.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		C69DCFF92A49C7FC00E91835 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				C69DCFFA2A49C80D00E91835 /* SplashAPI.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,7 +278,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C67002092A450AA000530355 /* SplashViewModel.swift in Sources */,
+				C67002192A45170C00530355 /* SplashModule.swift in Sources */,
+				C670020B2A450C2F00530355 /* SplashCoordinator.swift in Sources */,
+				C69DCFFB2A49C80D00E91835 /* SplashAPI.swift in Sources */,
 				C67001642A44FE5B00530355 /* Splash.docc in Sources */,
+				C67002072A450A8700530355 /* SplashViewController.swift in Sources */,
+				C670021B2A45178300530355 /* SplashViewModelProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,6 +486,7 @@
 		C67001772A44FE5B00530355 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JXQ54B2CD8;
@@ -446,6 +503,7 @@
 		C67001782A44FE5B00530355 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JXQ54B2CD8;
