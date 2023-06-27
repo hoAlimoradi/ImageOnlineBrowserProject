@@ -11,6 +11,11 @@
 		C670011E2A44F49A00530355 /* Coordinator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C67001132A44F49900530355 /* Coordinator.framework */; };
 		C67001232A44F49A00530355 /* CoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67001222A44F49A00530355 /* CoordinatorTests.swift */; };
 		C67001242A44F49A00530355 /* Coordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = C67001162A44F49900530355 /* Coordinator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C670020D2A450DA200530355 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C670020C2A450DA200530355 /* MainCoordinator.swift */; };
+		C67002102A450DFC00530355 /* Commons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C670020F2A450DFC00530355 /* Commons.framework */; };
+		C67002112A450DFC00530355 /* Commons.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C670020F2A450DFC00530355 /* Commons.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C67002142A450E0600530355 /* Splash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C67002132A450E0600530355 /* Splash.framework */; };
+		C67002152A450E0600530355 /* Splash.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C67002132A450E0600530355 /* Splash.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +28,30 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		C67002122A450DFC00530355 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C67002112A450DFC00530355 /* Commons.framework in Embed Frameworks */,
+				C67002152A450E0600530355 /* Splash.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		C67001132A44F49900530355 /* Coordinator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Coordinator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C67001162A44F49900530355 /* Coordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Coordinator.h; sourceTree = "<group>"; };
 		C67001172A44F49900530355 /* Coordinator.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Coordinator.docc; sourceTree = "<group>"; };
 		C670011D2A44F49A00530355 /* CoordinatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoordinatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C67001222A44F49A00530355 /* CoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorTests.swift; sourceTree = "<group>"; };
+		C670020C2A450DA200530355 /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		C670020F2A450DFC00530355 /* Commons.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Commons.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C67002132A450E0600530355 /* Splash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Splash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +59,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C67002102A450DFC00530355 /* Commons.framework in Frameworks */,
+				C67002142A450E0600530355 /* Splash.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +81,7 @@
 				C67001152A44F49900530355 /* Coordinator */,
 				C67001212A44F49A00530355 /* CoordinatorTests */,
 				C67001142A44F49900530355 /* Products */,
+				C670020E2A450DFC00530355 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +99,7 @@
 			children = (
 				C67001162A44F49900530355 /* Coordinator.h */,
 				C67001172A44F49900530355 /* Coordinator.docc */,
+				C670020C2A450DA200530355 /* MainCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -83,6 +110,15 @@
 				C67001222A44F49A00530355 /* CoordinatorTests.swift */,
 			);
 			path = CoordinatorTests;
+			sourceTree = "<group>";
+		};
+		C670020E2A450DFC00530355 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C67002132A450E0600530355 /* Splash.framework */,
+				C670020F2A450DFC00530355 /* Commons.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -107,6 +143,7 @@
 				C670010F2A44F49900530355 /* Sources */,
 				C67001102A44F49900530355 /* Frameworks */,
 				C67001112A44F49900530355 /* Resources */,
+				C67002122A450DFC00530355 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -195,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C67001182A44F49900530355 /* Coordinator.docc in Sources */,
+				C670020D2A450DA200530355 /* MainCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +434,7 @@
 		C670012B2A44F49A00530355 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JXQ54B2CD8;
@@ -412,6 +451,7 @@
 		C670012C2A44F49A00530355 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JXQ54B2CD8;
