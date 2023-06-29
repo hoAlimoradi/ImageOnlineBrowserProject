@@ -13,13 +13,17 @@
 		C683DCB02A4B2DF500161AED /* Search.h in Headers */ = {isa = PBXBuildFile; fileRef = C683DCA22A4B2DF400161AED /* Search.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C683DCBB2A4B2E2A00161AED /* Commons.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C683DCBA2A4B2E2A00161AED /* Commons.framework */; };
 		C683DCBC2A4B2E2A00161AED /* Commons.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C683DCBA2A4B2E2A00161AED /* Commons.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C683DCBF2A4B2E3200161AED /* Coordinator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C683DCBE2A4B2E3200161AED /* Coordinator.framework */; };
-		C683DCC02A4B2E3200161AED /* Coordinator.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C683DCBE2A4B2E3200161AED /* Coordinator.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C683DCC22A4B2E3D00161AED /* NetworkAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C683DCC12A4B2E3D00161AED /* NetworkAPI.framework */; };
 		C683DCC32A4B2E3D00161AED /* NetworkAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C683DCC12A4B2E3D00161AED /* NetworkAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C683DCC52A4B2E4C00161AED /* SharedUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C683DCC42A4B2E4C00161AED /* SharedUI.framework */; };
 		C683DCC62A4B2E4C00161AED /* SharedUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C683DCC42A4B2E4C00161AED /* SharedUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C683DCCF2A4B2F5B00161AED /* SearchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C683DCCE2A4B2F5B00161AED /* SearchAPI.swift */; };
+		C683DCD12A4B30B900161AED /* SearchViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C683DCD02A4B30B900161AED /* SearchViewModelProtocol.swift */; };
+		C683DCD32A4B368800161AED /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C683DCD22A4B368800161AED /* SearchViewModel.swift */; };
+		C683DCD52A4B36FC00161AED /* SearchModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = C683DCD42A4B36FB00161AED /* SearchModule.swift */; };
+		C683DCD72A4B388900161AED /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C683DCD62A4B388900161AED /* SearchViewController.swift */; };
+		C683DCD92A4B399400161AED /* SearchRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = C683DCD82A4B399400161AED /* SearchRouting.swift */; };
+		C68E61092A4B7BB700437E01 /* SearchResultCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68E61082A4B7BB700437E01 /* SearchResultCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +45,6 @@
 			files = (
 				C683DCBC2A4B2E2A00161AED /* Commons.framework in Embed Frameworks */,
 				C683DCC32A4B2E3D00161AED /* NetworkAPI.framework in Embed Frameworks */,
-				C683DCC02A4B2E3200161AED /* Coordinator.framework in Embed Frameworks */,
 				C683DCC62A4B2E4C00161AED /* SharedUI.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -60,6 +63,12 @@
 		C683DCC12A4B2E3D00161AED /* NetworkAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = NetworkAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C683DCC42A4B2E4C00161AED /* SharedUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SharedUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C683DCCE2A4B2F5B00161AED /* SearchAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAPI.swift; sourceTree = "<group>"; };
+		C683DCD02A4B30B900161AED /* SearchViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModelProtocol.swift; sourceTree = "<group>"; };
+		C683DCD22A4B368800161AED /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		C683DCD42A4B36FB00161AED /* SearchModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModule.swift; sourceTree = "<group>"; };
+		C683DCD62A4B388900161AED /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		C683DCD82A4B399400161AED /* SearchRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchRouting.swift; sourceTree = "<group>"; };
+		C68E61082A4B7BB700437E01 /* SearchResultCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,7 +78,6 @@
 			files = (
 				C683DCBB2A4B2E2A00161AED /* Commons.framework in Frameworks */,
 				C683DCC22A4B2E3D00161AED /* NetworkAPI.framework in Frameworks */,
-				C683DCBF2A4B2E3200161AED /* Coordinator.framework in Frameworks */,
 				C683DCC52A4B2E4C00161AED /* SharedUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +147,8 @@
 		C683DCCA2A4B2E6B00161AED /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C68E61072A4B7B7400437E01 /* Cell */,
+				C683DCD62A4B388900161AED /* SearchViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -146,6 +156,8 @@
 		C683DCCB2A4B2E7400161AED /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				C683DCD02A4B30B900161AED /* SearchViewModelProtocol.swift */,
+				C683DCD22A4B368800161AED /* SearchViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -153,6 +165,8 @@
 		C683DCCC2A4B2E8E00161AED /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				C683DCD42A4B36FB00161AED /* SearchModule.swift */,
+				C683DCD82A4B399400161AED /* SearchRouting.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -163,6 +177,14 @@
 				C683DCCE2A4B2F5B00161AED /* SearchAPI.swift */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		C68E61072A4B7B7400437E01 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				C68E61082A4B7BB700437E01 /* SearchResultCollectionViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,7 +297,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C683DCD72A4B388900161AED /* SearchViewController.swift in Sources */,
+				C683DCD92A4B399400161AED /* SearchRouting.swift in Sources */,
+				C683DCD12A4B30B900161AED /* SearchViewModelProtocol.swift in Sources */,
+				C68E61092A4B7BB700437E01 /* SearchResultCollectionViewCell.swift in Sources */,
 				C683DCCF2A4B2F5B00161AED /* SearchAPI.swift in Sources */,
+				C683DCD32A4B368800161AED /* SearchViewModel.swift in Sources */,
+				C683DCD52A4B36FC00161AED /* SearchModule.swift in Sources */,
 				C683DCA42A4B2DF400161AED /* Search.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

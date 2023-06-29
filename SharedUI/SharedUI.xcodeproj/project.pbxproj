@@ -11,6 +11,36 @@
 		C670018E2A45025A00530355 /* SharedUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C67001832A45025900530355 /* SharedUI.framework */; };
 		C67001932A45025A00530355 /* SharedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67001922A45025A00530355 /* SharedUITests.swift */; };
 		C67001942A45025A00530355 /* SharedUI.h in Headers */ = {isa = PBXBuildFile; fileRef = C67001862A45025900530355 /* SharedUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C67B97DC2A4C7FD8005B90E1 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67B97DB2A4C7FD8005B90E1 /* Fonts.swift */; };
+		C67B97E02A4C8BE5005B90E1 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67B97DF2A4C8BE5005B90E1 /* Colors.swift */; };
+		C67B97E22A4C8CA2005B90E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C67B97E12A4C8CA2005B90E1 /* Assets.xcassets */; };
+		C68E60F52A4B708400437E01 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68E60F42A4B708400437E01 /* UIView+Extension.swift */; };
+		C68E60F72A4B70C400437E01 /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68E60F62A4B70C400437E01 /* UILabel+Extension.swift */; };
+		C68E60F92A4B70FF00437E01 /* UIImageView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68E60F82A4B70FF00437E01 /* UIImageView+Extension.swift */; };
+		C68E60FC2A4B76DE00437E01 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = C68E60FB2A4B76DE00437E01 /* Kingfisher */; };
+		C68E60FE2A4B7A9600437E01 /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68E60FD2A4B7A9600437E01 /* UITextField+Extension.swift */; };
+		C68E61002A4B7ABA00437E01 /* UICollectionView+ReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68E60FF2A4B7ABA00437E01 /* UICollectionView+ReusableCell.swift */; };
+		C68E61022A4B7ADE00437E01 /* ReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68E61012A4B7ADE00437E01 /* ReusableCell.swift */; };
+		C68E61042A4B7B0700437E01 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68E61032A4B7B0700437E01 /* UIColor+Extension.swift */; };
+		C68E61062A4B7B2900437E01 /* Extension+UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68E61052A4B7B2900437E01 /* Extension+UIViewController.swift */; };
+		C68E61352A4B82E300437E01 /* SF-Pro-Display-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C68E61232A4B82DF00437E01 /* SF-Pro-Display-RegularItalic.otf */; };
+		C68E61362A4B82E300437E01 /* SF-Pro-Display-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C68E61242A4B82DF00437E01 /* SF-Pro-Display-LightItalic.otf */; };
+		C68E61372A4B82E300437E01 /* SF-Pro-Display-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C68E61252A4B82DF00437E01 /* SF-Pro-Display-BoldItalic.otf */; };
+		C68E61382A4B82E300437E01 /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C68E61262A4B82DF00437E01 /* SF-Pro-Display-Bold.otf */; };
+		C68E61392A4B82E300437E01 /* SF-Pro-Display-MediumItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C68E61272A4B82E000437E01 /* SF-Pro-Display-MediumItalic.otf */; };
+		C68E613A2A4B82E300437E01 /* SF-Pro-Display-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = C68E61282A4B82E000437E01 /* SF-Pro-Display-Light.otf */; };
+		C68E613B2A4B82E300437E01 /* SF-Pro-Display-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = C68E61292A4B82E000437E01 /* SF-Pro-Display-Medium.otf */; };
+		C68E613C2A4B82E300437E01 /* SF-Pro-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = C68E612A2A4B82E100437E01 /* SF-Pro-Display-Semibold.otf */; };
+		C68E613D2A4B82E300437E01 /* SF-Pro-Display-Ultralight.otf in Resources */ = {isa = PBXBuildFile; fileRef = C68E612B2A4B82E100437E01 /* SF-Pro-Display-Ultralight.otf */; };
+		C68E613E2A4B82E300437E01 /* SF-Pro-Display-UltralightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C68E612C2A4B82E100437E01 /* SF-Pro-Display-UltralightItalic.otf */; };
+		C68E613F2A4B82E300437E01 /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = C68E612D2A4B82E100437E01 /* SF-Pro-Display-Regular.otf */; };
+		C68E61402A4B82E300437E01 /* SF-Pro-Display-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = C68E612E2A4B82E200437E01 /* SF-Pro-Display-Thin.otf */; };
+		C68E61412A4B82E300437E01 /* SF-Pro-Display-Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = C68E612F2A4B82E200437E01 /* SF-Pro-Display-Heavy.otf */; };
+		C68E61422A4B82E300437E01 /* SF-Pro-Display-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = C68E61302A4B82E200437E01 /* SF-Pro-Display-Black.otf */; };
+		C68E61432A4B82E300437E01 /* SF-Pro-Display-BlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C68E61312A4B82E200437E01 /* SF-Pro-Display-BlackItalic.otf */; };
+		C68E61442A4B82E300437E01 /* SF-Pro-Display-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C68E61322A4B82E300437E01 /* SF-Pro-Display-SemiboldItalic.otf */; };
+		C68E61452A4B82E300437E01 /* SF-Pro-Display-ThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C68E61332A4B82E300437E01 /* SF-Pro-Display-ThinItalic.otf */; };
+		C68E61462A4B82E300437E01 /* SF-Pro-Display-HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C68E61342A4B82E300437E01 /* SF-Pro-Display-HeavyItalic.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +59,35 @@
 		C67001872A45025900530355 /* SharedUI.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = SharedUI.docc; sourceTree = "<group>"; };
 		C670018D2A45025A00530355 /* SharedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SharedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C67001922A45025A00530355 /* SharedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedUITests.swift; sourceTree = "<group>"; };
+		C67B97DB2A4C7FD8005B90E1 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		C67B97DF2A4C8BE5005B90E1 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		C67B97E12A4C8CA2005B90E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C68E60F42A4B708400437E01 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		C68E60F62A4B70C400437E01 /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		C68E60F82A4B70FF00437E01 /* UIImageView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extension.swift"; sourceTree = "<group>"; };
+		C68E60FD2A4B7A9600437E01 /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		C68E60FF2A4B7ABA00437E01 /* UICollectionView+ReusableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+ReusableCell.swift"; sourceTree = "<group>"; };
+		C68E61012A4B7ADE00437E01 /* ReusableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableCell.swift; sourceTree = "<group>"; };
+		C68E61032A4B7B0700437E01 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		C68E61052A4B7B2900437E01 /* Extension+UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIViewController.swift"; sourceTree = "<group>"; };
+		C68E61232A4B82DF00437E01 /* SF-Pro-Display-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-RegularItalic.otf"; sourceTree = "<group>"; };
+		C68E61242A4B82DF00437E01 /* SF-Pro-Display-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-LightItalic.otf"; sourceTree = "<group>"; };
+		C68E61252A4B82DF00437E01 /* SF-Pro-Display-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-BoldItalic.otf"; sourceTree = "<group>"; };
+		C68E61262A4B82DF00437E01 /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
+		C68E61272A4B82E000437E01 /* SF-Pro-Display-MediumItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-MediumItalic.otf"; sourceTree = "<group>"; };
+		C68E61282A4B82E000437E01 /* SF-Pro-Display-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Light.otf"; sourceTree = "<group>"; };
+		C68E61292A4B82E000437E01 /* SF-Pro-Display-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Medium.otf"; sourceTree = "<group>"; };
+		C68E612A2A4B82E100437E01 /* SF-Pro-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Semibold.otf"; sourceTree = "<group>"; };
+		C68E612B2A4B82E100437E01 /* SF-Pro-Display-Ultralight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Ultralight.otf"; sourceTree = "<group>"; };
+		C68E612C2A4B82E100437E01 /* SF-Pro-Display-UltralightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-UltralightItalic.otf"; sourceTree = "<group>"; };
+		C68E612D2A4B82E100437E01 /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
+		C68E612E2A4B82E200437E01 /* SF-Pro-Display-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Thin.otf"; sourceTree = "<group>"; };
+		C68E612F2A4B82E200437E01 /* SF-Pro-Display-Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Heavy.otf"; sourceTree = "<group>"; };
+		C68E61302A4B82E200437E01 /* SF-Pro-Display-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Black.otf"; sourceTree = "<group>"; };
+		C68E61312A4B82E200437E01 /* SF-Pro-Display-BlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-BlackItalic.otf"; sourceTree = "<group>"; };
+		C68E61322A4B82E300437E01 /* SF-Pro-Display-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-SemiboldItalic.otf"; sourceTree = "<group>"; };
+		C68E61332A4B82E300437E01 /* SF-Pro-Display-ThinItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-ThinItalic.otf"; sourceTree = "<group>"; };
+		C68E61342A4B82E300437E01 /* SF-Pro-Display-HeavyItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-HeavyItalic.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C68E60FC2A4B76DE00437E01 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,8 +131,19 @@
 		C67001852A45025900530355 /* SharedUI */ = {
 			isa = PBXGroup;
 			children = (
+				C68E61222A4B829C00437E01 /* Fonts */,
 				C67001862A45025900530355 /* SharedUI.h */,
 				C67001872A45025900530355 /* SharedUI.docc */,
+				C68E60F42A4B708400437E01 /* UIView+Extension.swift */,
+				C68E60F62A4B70C400437E01 /* UILabel+Extension.swift */,
+				C68E60F82A4B70FF00437E01 /* UIImageView+Extension.swift */,
+				C68E60FD2A4B7A9600437E01 /* UITextField+Extension.swift */,
+				C68E60FF2A4B7ABA00437E01 /* UICollectionView+ReusableCell.swift */,
+				C68E61012A4B7ADE00437E01 /* ReusableCell.swift */,
+				C68E61032A4B7B0700437E01 /* UIColor+Extension.swift */,
+				C68E61052A4B7B2900437E01 /* Extension+UIViewController.swift */,
+				C67B97DF2A4C8BE5005B90E1 /* Colors.swift */,
+				C67B97E12A4C8CA2005B90E1 /* Assets.xcassets */,
 			);
 			path = SharedUI;
 			sourceTree = "<group>";
@@ -83,6 +154,32 @@
 				C67001922A45025A00530355 /* SharedUITests.swift */,
 			);
 			path = SharedUITests;
+			sourceTree = "<group>";
+		};
+		C68E61222A4B829C00437E01 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C68E61302A4B82E200437E01 /* SF-Pro-Display-Black.otf */,
+				C68E61312A4B82E200437E01 /* SF-Pro-Display-BlackItalic.otf */,
+				C68E61262A4B82DF00437E01 /* SF-Pro-Display-Bold.otf */,
+				C68E61252A4B82DF00437E01 /* SF-Pro-Display-BoldItalic.otf */,
+				C68E612F2A4B82E200437E01 /* SF-Pro-Display-Heavy.otf */,
+				C68E61342A4B82E300437E01 /* SF-Pro-Display-HeavyItalic.otf */,
+				C68E61282A4B82E000437E01 /* SF-Pro-Display-Light.otf */,
+				C68E61242A4B82DF00437E01 /* SF-Pro-Display-LightItalic.otf */,
+				C68E61292A4B82E000437E01 /* SF-Pro-Display-Medium.otf */,
+				C68E61272A4B82E000437E01 /* SF-Pro-Display-MediumItalic.otf */,
+				C68E612D2A4B82E100437E01 /* SF-Pro-Display-Regular.otf */,
+				C68E61232A4B82DF00437E01 /* SF-Pro-Display-RegularItalic.otf */,
+				C68E612A2A4B82E100437E01 /* SF-Pro-Display-Semibold.otf */,
+				C68E61322A4B82E300437E01 /* SF-Pro-Display-SemiboldItalic.otf */,
+				C68E612E2A4B82E200437E01 /* SF-Pro-Display-Thin.otf */,
+				C68E61332A4B82E300437E01 /* SF-Pro-Display-ThinItalic.otf */,
+				C68E612B2A4B82E100437E01 /* SF-Pro-Display-Ultralight.otf */,
+				C68E612C2A4B82E100437E01 /* SF-Pro-Display-UltralightItalic.otf */,
+				C67B97DB2A4C7FD8005B90E1 /* Fonts.swift */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -113,6 +210,9 @@
 			dependencies = (
 			);
 			name = SharedUI;
+			packageProductDependencies = (
+				C68E60FB2A4B76DE00437E01 /* Kingfisher */,
+			);
 			productName = SharedUI;
 			productReference = C67001832A45025900530355 /* SharedUI.framework */;
 			productType = "com.apple.product-type.framework";
@@ -162,6 +262,9 @@
 				Base,
 			);
 			mainGroup = C67001792A45025900530355;
+			packageReferences = (
+				C68E60FA2A4B76DE00437E01 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = C67001842A45025900530355 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -177,6 +280,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C68E613C2A4B82E300437E01 /* SF-Pro-Display-Semibold.otf in Resources */,
+				C68E613F2A4B82E300437E01 /* SF-Pro-Display-Regular.otf in Resources */,
+				C68E61452A4B82E300437E01 /* SF-Pro-Display-ThinItalic.otf in Resources */,
+				C68E61372A4B82E300437E01 /* SF-Pro-Display-BoldItalic.otf in Resources */,
+				C68E61392A4B82E300437E01 /* SF-Pro-Display-MediumItalic.otf in Resources */,
+				C68E613D2A4B82E300437E01 /* SF-Pro-Display-Ultralight.otf in Resources */,
+				C68E61362A4B82E300437E01 /* SF-Pro-Display-LightItalic.otf in Resources */,
+				C68E61462A4B82E300437E01 /* SF-Pro-Display-HeavyItalic.otf in Resources */,
+				C68E61382A4B82E300437E01 /* SF-Pro-Display-Bold.otf in Resources */,
+				C68E61422A4B82E300437E01 /* SF-Pro-Display-Black.otf in Resources */,
+				C68E61412A4B82E300437E01 /* SF-Pro-Display-Heavy.otf in Resources */,
+				C68E613A2A4B82E300437E01 /* SF-Pro-Display-Light.otf in Resources */,
+				C68E61432A4B82E300437E01 /* SF-Pro-Display-BlackItalic.otf in Resources */,
+				C67B97E22A4C8CA2005B90E1 /* Assets.xcassets in Resources */,
+				C68E61402A4B82E300437E01 /* SF-Pro-Display-Thin.otf in Resources */,
+				C68E61442A4B82E300437E01 /* SF-Pro-Display-SemiboldItalic.otf in Resources */,
+				C68E61352A4B82E300437E01 /* SF-Pro-Display-RegularItalic.otf in Resources */,
+				C68E613B2A4B82E300437E01 /* SF-Pro-Display-Medium.otf in Resources */,
+				C68E613E2A4B82E300437E01 /* SF-Pro-Display-UltralightItalic.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,7 +316,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C68E60FE2A4B7A9600437E01 /* UITextField+Extension.swift in Sources */,
+				C67B97E02A4C8BE5005B90E1 /* Colors.swift in Sources */,
+				C68E60F52A4B708400437E01 /* UIView+Extension.swift in Sources */,
 				C67001882A45025900530355 /* SharedUI.docc in Sources */,
+				C68E60F92A4B70FF00437E01 /* UIImageView+Extension.swift in Sources */,
+				C68E60F72A4B70C400437E01 /* UILabel+Extension.swift in Sources */,
+				C68E61062A4B7B2900437E01 /* Extension+UIViewController.swift in Sources */,
+				C67B97DC2A4C7FD8005B90E1 /* Fonts.swift in Sources */,
+				C68E61022A4B7ADE00437E01 /* ReusableCell.swift in Sources */,
+				C68E61002A4B7ABA00437E01 /* UICollectionView+ReusableCell.swift in Sources */,
+				C68E61042A4B7B0700437E01 /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +528,7 @@
 		C670019B2A45025A00530355 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JXQ54B2CD8;
@@ -412,6 +545,7 @@
 		C670019C2A45025A00530355 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JXQ54B2CD8;
@@ -456,6 +590,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C68E60FA2A4B76DE00437E01 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C68E60FB2A4B76DE00437E01 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C68E60FA2A4B76DE00437E01 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C670017A2A45025900530355 /* Project object */;
 }
