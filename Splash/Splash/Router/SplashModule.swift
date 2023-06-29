@@ -18,8 +18,7 @@ enum SplashModule {
     static func build(with configuration: Configuration,
                       router: SplashCoordinator) -> SceneView {
         let viewModel = SplashViewModel(configuration: configuration)
-        let router = router //SplashRouter(config: configuration)
-        //let router = SplashCoordinator(config: configuration)
+        let router = router 
         let viewController = SceneView(configuration: configuration,
                                        viewModel: viewModel,
                                        router: router)

@@ -6,9 +6,7 @@
 //
 
 import UIKit
-import UIKit
 import Commons
-
 
 protocol SplashRouting {
     func navigateToMainTab()
@@ -16,22 +14,6 @@ protocol SplashRouting {
 
 public protocol SplashCoordinatorDelegate: AnyObject {
     func navigateToMainTab()
-}
-
-final class SplashRouter1: SplashRouting {
-
-    // MARK: - Properties
-    weak var viewController: UIViewController?
-    private let config: SplashModule.Configuration
-
-    // MARK: - Initilize
-    init(config: SplashModule.Configuration) {
-        self.config = config
-    }
-     
-    func navigateToMainTab() {
-          
-    }
 }
 
 public final class SplashCoordinator: Coordinator,
