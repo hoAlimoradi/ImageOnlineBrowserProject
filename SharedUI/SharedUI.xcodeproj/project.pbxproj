@@ -41,6 +41,13 @@
 		C68E61442A4B82E300437E01 /* SF-Pro-Display-SemiboldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C68E61322A4B82E300437E01 /* SF-Pro-Display-SemiboldItalic.otf */; };
 		C68E61452A4B82E300437E01 /* SF-Pro-Display-ThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C68E61332A4B82E300437E01 /* SF-Pro-Display-ThinItalic.otf */; };
 		C68E61462A4B82E300437E01 /* SF-Pro-Display-HeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = C68E61342A4B82E300437E01 /* SF-Pro-Display-HeavyItalic.otf */; };
+		C6A4775A2A587F6900B08252 /* GradientsOwner.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A477592A587F6900B08252 /* GradientsOwner.swift */; };
+		C6A4775C2A587F9E00B08252 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A4775B2A587F9E00B08252 /* GradientView.swift */; };
+		C6A4775E2A587FE000B08252 /* GradientTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A4775D2A587FE000B08252 /* GradientTransition.swift */; };
+		C6A477602A58804600B08252 /* GradientPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A4775F2A58804600B08252 /* GradientPoint.swift */; };
+		C6A477622A58808F00B08252 /* GradientContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A477612A58808F00B08252 /* GradientContainerView.swift */; };
+		C6A477642A5880B200B08252 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A477632A5880B200B08252 /* Direction.swift */; };
+		C6A477662A5880E200B08252 /* CAGradientLayer+Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6A477652A5880E200B08252 /* CAGradientLayer+Slide.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +95,13 @@
 		C68E61322A4B82E300437E01 /* SF-Pro-Display-SemiboldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-SemiboldItalic.otf"; sourceTree = "<group>"; };
 		C68E61332A4B82E300437E01 /* SF-Pro-Display-ThinItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-ThinItalic.otf"; sourceTree = "<group>"; };
 		C68E61342A4B82E300437E01 /* SF-Pro-Display-HeavyItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-HeavyItalic.otf"; sourceTree = "<group>"; };
+		C6A477592A587F6900B08252 /* GradientsOwner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientsOwner.swift; sourceTree = "<group>"; };
+		C6A4775B2A587F9E00B08252 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		C6A4775D2A587FE000B08252 /* GradientTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientTransition.swift; sourceTree = "<group>"; };
+		C6A4775F2A58804600B08252 /* GradientPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientPoint.swift; sourceTree = "<group>"; };
+		C6A477612A58808F00B08252 /* GradientContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientContainerView.swift; sourceTree = "<group>"; };
+		C6A477632A5880B200B08252 /* Direction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
+		C6A477652A5880E200B08252 /* CAGradientLayer+Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CAGradientLayer+Slide.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +145,7 @@
 		C67001852A45025900530355 /* SharedUI */ = {
 			isa = PBXGroup;
 			children = (
+				C6824BA62A584678003A5E30 /* Skeleton */,
 				C68E61222A4B829C00437E01 /* Fonts */,
 				C67001862A45025900530355 /* SharedUI.h */,
 				C67001872A45025900530355 /* SharedUI.docc */,
@@ -154,6 +169,20 @@
 				C67001922A45025A00530355 /* SharedUITests.swift */,
 			);
 			path = SharedUITests;
+			sourceTree = "<group>";
+		};
+		C6824BA62A584678003A5E30 /* Skeleton */ = {
+			isa = PBXGroup;
+			children = (
+				C6A477592A587F6900B08252 /* GradientsOwner.swift */,
+				C6A4775B2A587F9E00B08252 /* GradientView.swift */,
+				C6A4775D2A587FE000B08252 /* GradientTransition.swift */,
+				C6A4775F2A58804600B08252 /* GradientPoint.swift */,
+				C6A477612A58808F00B08252 /* GradientContainerView.swift */,
+				C6A477632A5880B200B08252 /* Direction.swift */,
+				C6A477652A5880E200B08252 /* CAGradientLayer+Slide.swift */,
+			);
+			path = Skeleton;
 			sourceTree = "<group>";
 		};
 		C68E61222A4B829C00437E01 /* Fonts */ = {
@@ -316,15 +345,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6A4775E2A587FE000B08252 /* GradientTransition.swift in Sources */,
 				C68E60FE2A4B7A9600437E01 /* UITextField+Extension.swift in Sources */,
+				C6A477622A58808F00B08252 /* GradientContainerView.swift in Sources */,
 				C67B97E02A4C8BE5005B90E1 /* Colors.swift in Sources */,
 				C68E60F52A4B708400437E01 /* UIView+Extension.swift in Sources */,
 				C67001882A45025900530355 /* SharedUI.docc in Sources */,
 				C68E60F92A4B70FF00437E01 /* UIImageView+Extension.swift in Sources */,
+				C6A477642A5880B200B08252 /* Direction.swift in Sources */,
 				C68E60F72A4B70C400437E01 /* UILabel+Extension.swift in Sources */,
 				C68E61062A4B7B2900437E01 /* Extension+UIViewController.swift in Sources */,
+				C6A477602A58804600B08252 /* GradientPoint.swift in Sources */,
+				C6A477662A5880E200B08252 /* CAGradientLayer+Slide.swift in Sources */,
+				C6A4775A2A587F6900B08252 /* GradientsOwner.swift in Sources */,
 				C67B97DC2A4C7FD8005B90E1 /* Fonts.swift in Sources */,
 				C68E61022A4B7ADE00437E01 /* ReusableCell.swift in Sources */,
+				C6A4775C2A587F9E00B08252 /* GradientView.swift in Sources */,
 				C68E61002A4B7ABA00437E01 /* UICollectionView+ReusableCell.swift in Sources */,
 				C68E61042A4B7B0700437E01 /* UIColor+Extension.swift in Sources */,
 			);
