@@ -4,10 +4,13 @@
 //
 //  Created by hoseinAlimoradi on 6/23/23.
 //
+/*
+ 
 import Foundation
 import Combine
 
-struct API {
+struct API1 {
+  private static let apiKey = "R3iB8Z1aIHj5ZKYI4LksTDUiPobseCbBNtnE35x2LLFzzmFTJZzhLK3w"
   /// API Errors.
   enum Error: LocalizedError {
     case addressUnreachable(URL)
@@ -128,3 +131,5 @@ extension Story: CustomDebugStringConvertible {
     return "\n\(title)\nby \(by)\n\(url)\n-----"
   }
 }
+ 
+ */

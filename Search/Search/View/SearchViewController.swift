@@ -134,10 +134,16 @@ class SearchViewController: UIViewController,
             .sink { [weak self] images in
                 guard let self else { return }
                 let targetModelDataSource = images.compactMap {
-                    SearchViewController.SearchTaskCollectionModel(id: UUID().uuidString,
-                                                            idGenerated: $0.id,
-                                                            name: $0.name)
-                    
+                    SearchViewController.SearchTaskCollectionModel(id: $0.id,
+                                                                   width: $0.width,
+                                                                   height: $0.height,
+                                                                   url: $0.url,
+                                                                   photographer: $0.photographer,
+                                                                   photographerURL: $0.photographerURL,
+                                                                   photographerID: $0.photographerID,
+                                                                   averageColor: $0.averageColor,
+                                                                   //source: $0.source.values.first,
+                                                                   alternateDescription: $0.alternateDescription)
                 }
                 self.updateCollection(targetModels: targetModelDataSource)
                 }.store(in: &cancellables)
@@ -228,9 +234,16 @@ extension SearchViewController {
        case searchResultTaskSection
    }
    struct SearchTaskCollectionModel: Hashable, Identifiable, Equatable {
-       let id: String
-       let idGenerated: String
-       let name: String
+       let id: Int
+       let width: Int
+       let height: Int
+       let url: String
+       let photographer: String
+       let photographerURL: String
+       let photographerID: Int
+       let averageColor: String
+       //let source: String
+       let alternateDescription: String
    }
 
    enum SearchTaskCollectionItemModel: Hashable {

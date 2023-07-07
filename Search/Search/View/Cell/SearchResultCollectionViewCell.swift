@@ -108,7 +108,7 @@ class SearchResultCollectionViewCell: UICollectionViewCell {
     }
     
     func config(with model: SearchViewController.SearchTaskCollectionModel) {
-        nameLabel.text = model.name
+        nameLabel.text = model.photographer
 //        imageView.setTokenizedImage(with: model.imageUrlString)
 //        if(model.isSelectedItem) {
 //            makeSelected()
