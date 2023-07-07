@@ -37,7 +37,7 @@ final class SearchViewModel: SearchViewModelProtocol {
         Task { [weak self] in
             guard let self = self else { return }
             do {
-                let images =  try await self.searchAPI.search(title: text)
+                let images =  try await self.searchAPI.search(text, nextPage: false)
                 self.state.value = self.state.value.update(searchFetchState: SearchFetchState.idle, images: images)
             } catch {
                 //TODO
