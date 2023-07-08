@@ -18,6 +18,8 @@
 		C67002152A450E0600530355 /* Splash.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C67002132A450E0600530355 /* Splash.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		C68E60C72A4B6D5C00437E01 /* Search.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C68E60C62A4B6D5C00437E01 /* Search.framework */; };
 		C68E60C82A4B6D5C00437E01 /* Search.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C68E60C62A4B6D5C00437E01 /* Search.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C6A035212A59D9800087BA67 /* Home.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6A035202A59D9800087BA67 /* Home.framework */; };
+		C6A035222A59D9800087BA67 /* Home.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C6A035202A59D9800087BA67 /* Home.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,7 @@
 				C67002112A450DFC00530355 /* Commons.framework in Embed Frameworks */,
 				C68E60C82A4B6D5C00437E01 /* Search.framework in Embed Frameworks */,
 				C67002152A450E0600530355 /* Splash.framework in Embed Frameworks */,
+				C6A035222A59D9800087BA67 /* Home.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -56,6 +59,7 @@
 		C670020F2A450DFC00530355 /* Commons.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Commons.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C67002132A450E0600530355 /* Splash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Splash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C68E60C62A4B6D5C00437E01 /* Search.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Search.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6A035202A59D9800087BA67 /* Home.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Home.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,7 @@
 				C67002102A450DFC00530355 /* Commons.framework in Frameworks */,
 				C68E60C72A4B6D5C00437E01 /* Search.framework in Frameworks */,
 				C67002142A450E0600530355 /* Splash.framework in Frameworks */,
+				C6A035212A59D9800087BA67 /* Home.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +125,7 @@
 		C670020E2A450DFC00530355 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C6A035202A59D9800087BA67 /* Home.framework */,
 				C68E60C62A4B6D5C00437E01 /* Search.framework */,
 				C67002132A450E0600530355 /* Splash.framework */,
 				C670020F2A450DFC00530355 /* Commons.framework */,

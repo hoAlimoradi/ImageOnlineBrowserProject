@@ -9,6 +9,7 @@ import UIKit
 import Splash
 import Search
 import Commons
+import Home
 
 public class MainCoordinator: Coordinator {
     
@@ -36,11 +37,18 @@ public class MainCoordinator: Coordinator {
 
 // MARK: - Splash Extensions
 extension MainCoordinator: SplashCoordinatorDelegate {
-    public func navigateToMainTab() {
-        let searchCoordinator = SearchCoordinator(navigationController: self.navigationController)
+    public func navigateToMainTab1() {
+        let searchCoordinator = HomeCoordinator(navigationController: self.navigationController)
         searchCoordinator.coordinatorDelegate = self
         searchCoordinator.start()
     }
+    /*
+     public func navigateToMainTab() {
+         let searchCoordinator = SearchCoordinator(navigationController: self.navigationController)
+         searchCoordinator.coordinatorDelegate = self
+         searchCoordinator.start()
+     }
+     */
 }
 
 // MARK: - Search Extensions
@@ -50,3 +58,18 @@ extension MainCoordinator: SearchCoordinatorDelegate {
     }
 }
 
+// MARK: - Home Extensions
+extension MainCoordinator: HomeCoordinatorDelegate {
+    public func navigateToMainTab() {
+        let searchCoordinator = HomeCoordinator(navigationController: self.navigationController)
+        searchCoordinator.coordinatorDelegate = self
+        searchCoordinator.start()
+    }
+    /*
+     public func navigateToMainTab() {
+         let searchCoordinator = SearchCoordinator(navigationController: self.navigationController)
+         searchCoordinator.coordinatorDelegate = self
+         searchCoordinator.start()
+     }
+     */
+}
