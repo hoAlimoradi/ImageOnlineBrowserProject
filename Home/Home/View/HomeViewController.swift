@@ -127,8 +127,9 @@ class HomeViewController: UIViewController,
             .sink { [weak self] routeAction in
                 guard let self else { return }
                 switch routeAction {
-                case .details:
-                    self.router.navigateToDetails(id: "")
+                case .details(let id, let title):
+                    self.router.navigateToDetails(collectionCategoryId: id,
+                                                  collectionTitle: title)
 //                case .showTabBar:
 //                    self.router.showTabBar()
                 }
@@ -196,7 +197,7 @@ extension HomeViewController {
        switch indexPath.section {
        case HomeCollectionSection.homeSection.rawValue:
            print(indexPath.row)
-           //self.viewModel.action(.updateUserTargets(indexPath.row))
+           self.viewModel.action(.details(indexPath.row))
        default:
            break
        }

@@ -11,7 +11,7 @@ protocol SplashAPIProtocol {
     func getVersion() async throws -> String
 }
 
-class SplashAPI: SplashAPIProtocol {
+final class SplashAPI: SplashAPIProtocol {
 
     enum SplashAPIError: Error {
         case invalidResponse

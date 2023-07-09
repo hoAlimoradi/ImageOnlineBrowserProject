@@ -17,6 +17,7 @@ final class HomeViewModel: HomeViewModelProtocol {
     var state: CurrentValueSubject<HomeViewModelState, Never>
     let homeAPI: HomeAPIProtocol
      
+    private var collections = [CollectionItem]()
     // MARK: - Initialize
     init(configuration: HomeModule.Configuration) {
         homeAPI = configuration.homeAPI
@@ -27,8 +28,8 @@ final class HomeViewModel: HomeViewModelProtocol {
         switch handler {
         case .getCollections:
             getCollections()
-        case .details(_):
-            print("details")
+        case .details(let index):
+            details(index)
         }
     }
      
@@ -38,7 +39,7 @@ final class HomeViewModel: HomeViewModelProtocol {
         Task { [weak self] in
             guard let self = self else { return }
             do {
-                let collections =  try await self.homeAPI.getCollections()
+                collections = try await self.homeAPI.getCollections()
                 self.state.value = self.state.value.update(homeFetchState: HomeFetchState.idle,
                                                            collectionItems: collections)
             } catch {
@@ -48,6 +49,14 @@ final class HomeViewModel: HomeViewModelProtocol {
             }
         }
     }
+     
+    private func details(_ index: Int) {
+        guard let id = collections.first?.id, let title = collections.first?.title else {
+            return
+        }
+        self.state.value = self.state.value.update(route: .details(id, title),
+                                                   homeFetchState: HomeFetchState.idle)
+   }
 }
 
 

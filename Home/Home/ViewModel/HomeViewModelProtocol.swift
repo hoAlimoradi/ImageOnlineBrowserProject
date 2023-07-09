@@ -33,7 +33,7 @@ enum HomeFetchState: Equatable {
 }
 
 enum HomeRouteAction {
-    case details(CollectionItem)
+    case details(String, String)
 }
 
 struct HomeViewModelState {
@@ -61,6 +61,6 @@ struct HomeViewModelState {
 
 enum HomeViewModelAction {
     case getCollections
-    case details(CollectionItem)
+    case details(Int)
 }
 
