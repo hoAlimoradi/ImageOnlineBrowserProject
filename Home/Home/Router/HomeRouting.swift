@@ -9,11 +9,13 @@ import UIKit
 import Commons
 
 protocol HomeRouting {
-    func navigateToDetails(id: String)
+    func navigateToDetails(collectionCategoryId: String,
+                           collectionTitle: String)
 }
 
 public protocol HomeCoordinatorDelegate: AnyObject {
-    func navigateToDetails(id: String)
+    func navigateToDetails(collectionCategoryId: String,
+                           collectionTitle: String)
 }
 
 public final class HomeCoordinator: Coordinator,
@@ -41,8 +43,10 @@ public final class HomeCoordinator: Coordinator,
         return homeViewController
     }
      
-    func navigateToDetails(id: String) {
-        coordinatorDelegate?.navigateToDetails(id: id)
+    func navigateToDetails(collectionCategoryId: String,
+                           collectionTitle: String) {
+        coordinatorDelegate?.navigateToDetails(collectionCategoryId: collectionCategoryId,
+                                               collectionTitle: collectionTitle)
     }
 }
  

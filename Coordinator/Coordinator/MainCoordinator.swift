@@ -10,8 +10,13 @@ import Splash
 import Search
 import Commons
 import Home
+import Detials
 
-public class MainCoordinator: Coordinator {
+public class MainCoordinator: Coordinator, DetailsCoordinatorDelegate {
+    public func popUpFromDetails() {
+         
+    }
+    
     
     // MARK: - Variables
     public var childCoordinators = [Coordinator]()
@@ -52,11 +57,6 @@ extension MainCoordinator: SplashCoordinatorDelegate {
 }
 
 // MARK: - Search Extensions
-extension MainCoordinator: SearchCoordinatorDelegate {
-    public func navigateToDetails(id: String) {
-        
-    }
-}
 
 // MARK: - Home Extensions
 extension MainCoordinator: HomeCoordinatorDelegate {
@@ -64,6 +64,14 @@ extension MainCoordinator: HomeCoordinatorDelegate {
         let searchCoordinator = HomeCoordinator(navigationController: self.navigationController)
         searchCoordinator.coordinatorDelegate = self
         searchCoordinator.start()
+    }
+    
+    public func navigateToDetails(collectionCategoryId: String,
+                                  collectionTitle: String) {
+        let detailsCoordinator = DetailsCoordinator(navigationController: self.navigationController)
+        detailsCoordinator.coordinatorDelegate = self
+        detailsCoordinator.start(collectionCategoryId: collectionCategoryId,
+                                 collectionTitle: collectionTitle)
     }
     /*
      public func navigateToMainTab() {
@@ -73,3 +81,5 @@ extension MainCoordinator: HomeCoordinatorDelegate {
      }
      */
 }
+ 
+
